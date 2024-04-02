@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration</title>
+<style>
+    body {
+        background-color: #f2f2f2; /* Set background color */
+        font-family: Arial, sans-serif; /* Set font family */
+    }
+    .container {
+        width: 50%; /* Set width of container */
+        margin: auto; /* Center align container */
+        padding: 20px; /* Add padding to container */
+        background-color: #fff; /* Set background color of container */
+        border-radius: 10px; /* Add border radius to container */
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Add shadow effect to container */
+    }
+    form {
+        margin-top: 20px; /* Add margin to top of form */
+    }
+    input[type="text"], input[type="password"], select {
+        width: 100%; /* Set width of input fields */
+        padding: 10px; /* Add padding to input fields */
+        margin-bottom: 10px; /* Add margin to bottom of input fields */
+        border: 1px solid #ccc; /* Add border to input fields */
+        border-radius: 5px; /* Add border radius to input fields */
+        box-sizing: border-box; /* Include padding and border in input field's total width */
+    }
+    input[type="submit"] {
+        width: 100%; /* Set width of submit button */
+        padding: 10px; /* Add padding to submit button */
+        background-color: #4CAF50; /* Set background color of submit button */
+        color: white; /* Set text color of submit button */
+        border: none; /* Remove border from submit button */
+        border-radius: 5px; /* Add border radius to submit button */
+        cursor: pointer; /* Change cursor to pointer on hover */
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049; /* Change background color of submit button on hover */
+    }
+</style>
+</head>
+<body>
+   <div class="container">
+       <h2>Registration Form</h2>
+       <form action="regForm" method="post">
+             Name : <input type="text" name="name1"><br><br>
+             Email : <input type="text" name="email1"><br><br>
+             Password : <input type="password" name="pass1"><br><br>
+             Phone No : <input type="text" name="phone1"><br><br>
+             Gender : <input type="radio" name="gender1" value="Male">Male
+                      <input type="radio" name="gender1" value="female">Female<br><br>
+             City : <select name="city1">
+                       <option> Select City </option>
+                       <option> Hyderabad </option>
+                       <option> Mumbai </option>
+                       <option> Pune </option>
+                       <option> Bangalore </option>
+                    </select><br><br>
+            <input type="submit" value="Register">   
+      </form>
+   </div>
+</body>
+</html>
